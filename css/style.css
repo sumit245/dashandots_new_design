@@ -224,6 +224,21 @@ img.responsive {
   background: #00acee;
   color: #fff;
 }
+
+.gk-instagram:hover,
+.gk-instagram:focus,
+.gk-instagram:active {
+  background: #e05181;
+  color: #fff;
+}
+
+.gk-linkedin:hover,
+.gk-linkedin:focus,
+.gk-linkedin:active {
+  background: #00acee;
+  color: #fff;
+}
+
 /* ------- Title and Desc Styles ------- */
 .section-title {
   font-family: "Open Sans", sans-serif;
@@ -352,12 +367,20 @@ img.responsive {
   color: #fff;
   padding: 16px 0 13px;
 }
+
 .sticky-navigation {
   width: 100%;
+  height: auto;
   z-index: 9999;
   position: relative;
 }
 /* -------- Navigation --------- */
+
+.logo {
+  width: 100px;
+
+  margin-left: 40px;
+}
 .top-navbar {
   margin: 0;
   min-height: inherit;
@@ -382,8 +405,9 @@ img.responsive {
 .navbar-toggle .icon-bar {
   background-color: #ffffff;
 }
+
 .navbar-nav {
-  margin: 0;
+  margin-right: 100px;
 }
 .navbar-nav li {
   margin-right: 20px;
@@ -1232,4 +1256,57 @@ img.responsive {
   line-height: 18px;
 }
 
-/* dropdownnavbar */
+.sub-menu-wrap {
+  position: absolute;
+  top: 200%;
+  width: 153%;
+  right: -40%;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu {
+  max-height: 400px;
+}
+.sub-menu {
+  background-color: #121413;
+  padding: 20px;
+  margin: 10px;
+}
+
+.sub-menu hr {
+  margin-left: 100px;
+  width: 30%;
+  color: #000;
+}
+
+.sub-munu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #525255;
+  margin: 12px 0;
+}
+
+.sub-munu-link p {
+  margin-left: 100px;
+  width: 100%;
+  font-size: 20px;
+}
+
+.sub-munu-link span {
+  margin-left: 200px;
+  color: red;
+  font-size: 15px;
+  transform: transform 0s;
+}
+
+.sub-munu-link:hover span {
+  transform: translateX(5px);
+}
+
+.sub-munu-link:hover p {
+  font-weight: 600;
+  color: #fff;
+}
