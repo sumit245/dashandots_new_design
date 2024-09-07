@@ -350,7 +350,7 @@ img.responsive {
 .logo-container {
   background: rgba(21, 21, 21, 0.9);
   color: #fff;
-  padding: 16px 0 13px;
+  padding: 4px 0 3px;
 }
 .sticky-navigation {
   width: 100%;
@@ -1233,3 +1233,5 @@ img.responsive {
 }
 
 /* dropdownnavbar */
+
+/* TrainingAnd Services*/
