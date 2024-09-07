@@ -109,10 +109,10 @@ jQuery(document).ready(function ($) {
   /* =============================
 	Active Scrollspy Navigation
 	============================= */
-  $("body").scrollspy({
-    target: "#topnav",
-    offset: 95,
-  });
+  // $("body").scrollspy({
+  //   target: "#topnav",
+  //   offset: 95,
+  // });
 
   /* =============================
 	Contact Form Validation

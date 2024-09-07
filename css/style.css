@@ -350,7 +350,7 @@ img.responsive {
 .logo-container {
   background: rgba(21, 21, 21, 0.9);
   color: #fff;
-  padding: 16px 0 13px;
+  padding: 4px 0 3px;
 }
 .sticky-navigation {
   width: 100%;
@@ -358,7 +358,7 @@ img.responsive {
   position: relative;
 }
 /* -------- Navigation --------- */
- .top-navbar {
+.top-navbar {
   margin: 0;
   min-height: inherit;
 }
@@ -428,7 +428,7 @@ img.responsive {
 }
 .top-social-icon li:last-child a {
   margin-right: 0;
-} 
+}
 /* =========================== BANNER SECTION ============================== */
 /* ------------- Left Banner Styles ------------- */
 .left-banner-text {
