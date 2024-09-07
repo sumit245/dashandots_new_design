@@ -45,56 +45,89 @@
 			<!-- Sticky Header Begins -->
 			<div id="sticky-menu" class="sticky-navigation">
 				<div class="logo-container">
-					<div class="container">
-						<div class="row">
+					
+					<div class="row">
 
-							<!-- Logo Begins -->
-							<div class="col-md-2 logo">
-								<a href="#" title="GeekApp"><img class="img-responsive" src="images/logo.png"
-										alt="GeekApp" /></a>
-							</div>
-							<!-- Logo Ends -->
-
-							<!-- Navigation Menu Begins -->
-							<div id="navigation" class="col-md-8 navbar top-navbar no-padding">
-
-								<!-- Mobile Nav Toggle Begins -->
-								<div class="navbar-header nav-respons">
-									<button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button"
-										class="navbar-toggle">
-										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
-								</div><!-- Mobile Nav Toggle Ends -->
-
-								<!-- Menu Begins -->
-								<nav id="topnav" role="navigation"
-									class="collapse navbar-collapse bs-navbar-collapse no-padding">
-									<ul class="nav navbar-nav navbar-right uppercase">
-										<li><a href="#about" class="scroll">About</a></li>
-										<li><a href="#features" class="scroll">Features</a></li>
-										<li><a href="#reviews" class="scroll">Reviews</a></li>
-										<li><a href="#services" class="scroll">Services</a></li>
-										<li><a href="#pricing" class="scroll">Pricing</a></li>
-										<li><a href="#video" class="scroll">Demo</a></li>
-										<li><a href="#contact-us" class="scroll">Contact</a></li>
-									</ul>
-								</nav><!-- Menu Ends -->
-							</div><!-- Navigation Menu Ends -->
-
-							<!-- Social Links Begins -->
-							<div class="col-md-2">
-								<ul class="top-social-icon">
-									<li><a href="#" class="gk-facebook"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#" class="gk-twitter"><i class="fa fa-twitter"></i></a></li>
-								</ul>
-							</div>
-							<!-- Social Links Ends -->
-
+						<!-- Logo Begins -->
+						<div class="col-md-2 logo">
+							<a href="#" title="GeekApp"><img class="img-responsive" src="images/logo.png" alt="GeekApp" /></a>
 						</div>
+						<!-- Logo Ends -->
+					
+						<!-- Navigation Menu Begins -->
+						<div id="navigation" class="col-md-8 navbar top-navbar no-padding">
+					
+							<!-- Mobile Nav Toggle Begins -->
+							<div class="navbar-header nav-respons">
+								<button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+					
+						
+							<nav id="topnav" role="navigation" class="collapse navbar-collapse bs-navbar-collapse no-padding">
+								<ul class="nav navbar-nav navbar-right uppercase">
+									<li><a href="#about" class="scroll" onclick="toggleMenu()">What we do</a></li>
+									<li><a href="#blog" class="scroll" onclick="toggleMenu()">How we are</a></li>
+									<li><a href="#contact-us" class="scroll">Contacts</a></li>
+								</ul>
+								<div class="sub-menu-wrap" id="subMenu">
+									<div class="sub-menu">
+										<hr/>
+										<a href="#" class="sub-munu-link">
+											<p>Overview</p>
+											<span>&rsaquo;</span>
+										</a><hr/>
+
+										<a href="#" class="sub-munu-link">
+											<p>Indusries</p>
+											<span>></span>
+										</a>
+										<hr/>
+
+										<a href="#" class="sub-munu-link">
+											<p>Services</p>
+											<span>></span>
+										</a>
+										<hr/>
+                                        
+										<a href="#" class="sub-munu-link">
+											<p>Products and Plotfoms</p>
+											<span>></span>
+										</a>
+										<hr/>
+
+										<a href="#" class="sub-munu-link"></a>
+											<p>Research & inmovation</p>
+											<span>></span>
+										</a>
+										<hr/>
+
+
+										
+									</div>
+								</div>
+							</nav>
+						</div>
+					
+						
+						<div class="col-md-2">
+							<ul class="top-social-icon">
+								<li><a href="#" class="gk-facebook"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#" class="gk-twitter"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#" class="gk-linkedin"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#" class="gk-instagram"><i class="fa fa-instagram"></i></a></li>
+							</ul>
+						</div>
+						
+					
 					</div>
+					
+					
+					
 				</div>
 			</div><!-- Sticky Header Ends -->
 			<!-- Banner Section Begins -->
@@ -133,8 +166,6 @@
 							<!-- Banner Button -->
 							<div class="banner-button">
 								<a href="#" class="btn gk-btn white-btn gk-btn-margin" role="button">Learn more</a>
-								<a href="#" class="btn gk-btn green-btn" role="button"><i
-										class="fa fa-cloud-download"></i> Get App Now</a>
 							</div>
 							<!-- Banner Nav Shape -->
 							<div class="row triangle-shape banner-nav">
@@ -145,57 +176,7 @@
 							</div>
 						</div><!-- Left Banner Text Ends -->
 						<!-- Right Banner Image Begins -->
-						<div class="col-md-7 right-banner-image animated" data-animation="fadeInRight"
-							data-animation-delay="500">
-							<div class="row">
-								<!-- Banner Counter Info Begins -->
-								<div class="col-sm-5 banner-image-info">
-									<!-- Row 1 -->
-									<div class="row">
-										<div class="col-xs-12 banner-left-margin">
-											<div class="banner-info col-xs-6 text-right text-uppercase">
-												<div class="count-number" data-count="6249"><span
-														class="counter text-bold"></span></div> Downloaded
-											</div>
-											<div class="banner-info-right col-xs-6 no-padding">
-												<span class="close-brackets">}</span> <i
-													class="fa fa-cloud-download color-green"></i>
-											</div>
-										</div>
-									</div>
-									<!-- Row 2 -->
-									<div class="row">
-										<div class="col-xs-12 banner-left-margin">
-											<div class="banner-info col-xs-6 text-right text-uppercase">
-												<div class="count-number" data-count="238"><span
-														class="counter text-bold"></span></div> Android Users
-											</div>
-											<div class="banner-info-right col-xs-6 no-padding">
-												<span class="close-brackets">}</span> <i
-													class="fa fa-android color-green"></i>
-											</div>
-										</div>
-									</div>
-									<!-- Row 3 -->
-									<div class="row">
-										<div class="col-xs-12 banner-left-margin">
-											<div class="banner-info col-xs-6 text-right text-uppercase">
-												<div class="count-number" data-count="1027"><span
-														class="counter text-bold"></span></div> IOS Users
-											</div>
-											<div class="banner-info-right col-xs-6 no-padding">
-												<span class="close-brackets">}</span> <i
-													class="fa fa-apple color-green"></i>
-											</div>
-										</div>
-									</div>
-								</div><!-- Banner Counter Info Ends -->
-								<!-- Banner Image -->
-								<div class="col-sm-7">
-									<img class="img-responsive pull-right" src="images/hero_right.png" alt="Iphone" />
-								</div>
-							</div>
-						</div> <!-- Right Banner Image Begins -->
+						
 
 					</div>
 				</div>
@@ -272,51 +253,10 @@
 												<hr class="features-line" />
 											</div><!-- Column 1 Ends -->
 											<!-- Column 2 Begins -->
-											<div class="col-sm-6">
-												<div class="features-grid">
-													<!-- Icon -->
-													<span class="simple-icon icon-magnifier color-green"></span>
-													<!-- Title -->
-													<h4 class="text-uppercase grid-title text-bold color-grey">Browse
-														Files</h4>
-													<!-- Content -->
-													<p>Ut labores laoreet petentium vix. Nec cu eripuit alterum, vel
-														cibo laoree</p>
-												</div>
-												<!-- Horizontal Line -->
-												<hr class="features-line" />
-											</div><!-- Column 2 Ends -->
-										</div><!-- First Row Ends -->
+											
 
 										<!-- Second Row Begins -->
-										<div class="row">
-											<!-- Column 1 Begins -->
-											<div class="col-sm-6 text-right">
-												<div class="features-grid gk-divider">
-													<!-- Icon -->
-													<span class="simple-icon icon-camera color-green"></span>
-													<!-- Title -->
-													<h4 class="text-uppercase grid-title text-bold color-grey">Share
-														Photos</h4>
-													<!-- Content -->
-													<p>Ut labores laoreet petentium vix. Nec cu eripuit alterum, vel
-														cibo laoree</p>
-												</div>
-											</div><!-- Column 1 Ends -->
-											<!-- Column 2 Begins -->
-											<div class="col-sm-6">
-												<div class="features-grid">
-													<!-- Icon -->
-													<span class="simple-icon icon-paper-clip color-green"></span>
-													<!-- Title -->
-													<h4 class="text-uppercase grid-title text-bold color-grey">File
-														Attachment</h4>
-													<!-- Content -->
-													<p>Ut labores laoreet petentium vix. Nec cu eripuit alterum, vel
-														cibo laoree</p>
-												</div>
-											</div><!-- Column 2 Ends -->
-										</div><!-- Second Row Ends -->
+										
 									</div>
 								</div><!-- Features Right Info Ends -->
 							</div>
@@ -1054,6 +994,7 @@
 								<span class="footer-social-icon">
 									<a href="#" class="gk-facebook"><i class="fa fa-facebook"></i></a>
 									<a href="#" class="gk-twitter"><i class="fa fa-twitter"></i></a>
+									
 								</span>
 							</p>
 						</div>
@@ -1065,21 +1006,15 @@
 	</div><!-- Wrapper Ends -->
 
 	<!-- Color Switcher -->
-	<section id="theme-panel" class="close-theme-panel">
-		<!--Panel Button -->
-		<a class="panel-button dark"><i class="fa fa-cog fa-spin"></i></a>
-		<div class="segment">
-			<h4 class="uppercase no-padding bold-italic">Color Switcher</h4>
-		</div>
-		<!-- Colors -->
-		<div class="segment">
-			<a title="" class="switcher color1-bg" href="../color-1/"></a>
-			<a title="" class="switcher color2-bg" href="../color-2/"></a>
-			<a title="" class="switcher color3-bg" href="../color-3/"></a>
-		</div>
-	</section><!-- End Color Switcher -->
+	<script>
+		let subMenu = document.getElementById("subMenu")
 
+     function toggleMenu(){
+    subMenu.classList.toggle("open-menu")
+    }
+	</script>
 	<!-- Script Begins -->
+	<script type="text/javascript" src="js/style.js"></script>
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<!-- Form Validation -->
