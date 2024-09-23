@@ -1,0 +1,260 @@
+/* General Styles */
+.header-section {
+  position: relative;
+  width: 100%;
+  height: 600px; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.header-image {
+  width: 100%;
+  height: 350%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 60px 20px;
+  color: #fff;
+}
+
+.header-title {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  color: #d91b5c;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header-subtitle {
+  font-size: 1.2em;
+  color: black;
+  margin-top: 20px;
+}
+body {
+  /* font-family: Arial, sans-serif; */
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.service-details-area {
+  padding: 100px 0;
+}
+
+.service-details-wrap {
+  padding: 20px;
+}
+/* Style for the service-details-wrap container */
+.service-details-wrap {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style for the h1 tag */
+.service-details-wrap h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Style for the p tag */
+.service-details-wrap p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555;
+  line-height: 2;
+  text-align: justify;
+  letter-spacing: 0.5px;
+  width: 100%;
+  /* max-width: 800px; */
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Arial", sans-serif;
+  /* font-family: "Gill Sans", sans-serif; */
+}
+
+.ask-question {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 2px 5px 25px 3px #ebafaf;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.enquiry-heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.enquiry-form .form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+.default-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+}
+
+.default-btn:hover {
+  background-color: #0056b3;
+}
+
+.service-sidebar-area {
+  margin-top: 20px;
+}
+
+.service-details-title {
+  margin-bottom: 15px;
+}
+
+.service-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service-list li {
+  margin-bottom: 10px;
+}
+
+.service-list a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.service-list a:hover {
+  text-decoration: underline;
+}
+
+.service-list i {
+  margin-left: 10px;
+}
+
+/* Responsive Layout */
+@media (min-width: 992px) {
+  .row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .col-lg-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+
+  .col-lg-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+}
+
+@media (max-width: 991px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .col-lg-4 {
+    margin-top: 20px;
+  }
+}
+
+/* Adjust the styling of the .form-group container */
+.form-group {
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+}
+
+/* Adjust the styling of the input element */
+.form-control {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Mobile view: Adjust image size and content for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .header-section {
+    height: 400px; /* Reduce the height for smaller screens */
+  }
+
+  .header-image {
+    height: 150%; /* Reduce the height of the image */
+  }
+
+  .header-title {
+    font-size: 1.8em; /* Reduce font size for mobile */
+    margin-top: 30px; /* Adjust margin */
+  }
+
+  .header-subtitle {
+    font-size: 1em; /* Smaller subtitle for mobile */
+  }
+
+  .header-content {
+    padding: 40px 10px; /* Reduce padding */
+  }
+}
+
+/* Mobile view for very small screens (e.g., phones under 480px) */
+@media screen and (max-width: 480px) {
+  .header-section {
+    height: 300px; /* Further reduce height for small screens */
+  }
+
+  .header-title {
+    font-size: 1.5em; /* Further reduce font size */
+    margin-top: 20px;
+  }
+
+  .header-subtitle {
+    font-size: 0.9em; /* Even smaller subtitle for very small screens */
+  }
+
+  .header-content {
+    padding: 30px 5px; /* Further reduce padding */
+  }
+}

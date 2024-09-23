@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Training</title>
+    <link rel="stylesheet" href="training.css" class="css" />
+    <!-- FONT AWESOME LINK USING BOXICON -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <div class="wrapper">
+        <h1>Our Training Offerings</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse amet
+          illo eos eligendi nobis nam aspernatur placeat.
+        </p>
+        <div class="content-box">
+          <div class="card">
+            <i class="bx bx-layout bx-md"></i>
+            <h2>UI/UX Designing</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi id
+              officia obcaecati modi quam nam deserunt culpa sunt blanditiis
+              provident, asperiores eius perferendis at exercitationem a
+              reiciendis maxime illum laudantium!
+            </p>
+            <br />
+            <a href="#enquiry" class="btn btn-enquiry">Enquiry</a>
+          </div>
+          <div class="card">
+            <i class="bx bx-laptop bx-md"></i>
+            <h2>Full-Stack Web Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+              aspernatur eos est iusto ad odit beatae perspiciatis dignissimos
+              eaque recusandae optio! At reprehenderit quisquam quae obcaecati
+              nostrum tempora eaque unde.
+            </p>
+            <br />
+            <a href="#enquiry" class="btn btn-enquiry">Enquiry</a>
+          </div>
+          <div class="card">
+            <i class="bx bx-network-chart bx-md"></i>
+            <h2>Internet Of Things</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum
+              odit harum iste molestias quis officia ea labore ex, libero beatae
+              veniam dolor, ad inventore reprehenderit alias repellendus
+              officiis optio error.
+            </p>
+            <br />
+            <a href="#enquiry" class="btn btn-enquiry">Enquiry</a>
+          </div>
+          <div class="card">
+            <i class="bx bx-world bx-md"></i>
+            <h2>Digital Marketing</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
+              aspernatur pariatur quisquam minus hic omnis? Dolor omnis
+              distinctio quidem odio in soluta quisquam, minus veniam accusamus
+              dolore, deleniti, temporibus quis.
+            </p>
+            <br />
+            <a href="#enquiry" class="btn btn-enquiry">Enquiry</a>
+          </div>
+          <div class="card">
+            <i class="bx bx-code bx-md"></i>
+            <h2>.Net Development</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
+              assumenda dolorum vero soluta ex deleniti inventore minus vitae.
+              Officia illum accusantium impedit exercitationem soluta labore
+              atque fuga ab laborum sequi.
+            </p>
+            <br />
+            <a href="#enquiry" class="btn btn-enquiry">Enquiry</a>
+          </div>
+          <div class="card">
+            <i class="bx bx-server bx-md"></i>
+            <h2>Frontend/Backend Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quo
+              excepturi non culpa velit error odio nostrum! Voluptatem dolores
+              aut, sequi aspernatur dicta suscipit labore facilis nemo ipsam
+              possimus neque!
+            </p>
+            <br />
+            <a href="#enquiry" class="btn btn-enquiry">Enquiry</a>
+          </div>
+        </div>
+      </div>
+      <div class="courses-wrapper">
+        <div class="course-list">
+          <h2>Popular Courses</h2>
+          <ul>
+            <li data-course="course1">UI/UX Designing</li>
+            <li data-course="course2">Full-Stack Web Development</li>
+            <li data-course="course3">Internet Of Things</li>
+            <li data-course="course4">Digital Marketing</li>
+            <li data-course="course5">.Net Development</li>
+            <li data-course="course6">Frontend/Backend Development</li>
+          </ul>
+        </div>
+        <div class="course-detail">
+          <div id="course-content">
+            <h2>Select a course</h2>
+            <p>Please select a course from the list to see the details.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Best Plan Offers Section -->
+     <div class="best-plan-offers">
+  <h2>Best Plan Offers</h2>
+  <div class="plans">
+    <div class="plan-card">
+      <h3>Basic Plan</h3>
+      <p>Perfect for beginners</p>
+    </div>
+    <div class="plan-card">
+      <h3>Pro Plan</h3>
+      <p>Best for professionals</p>
+     
+    </div>
+    <div class="plan-card">
+      <h3>Ultimate Plan</h3>
+      <p>For large enterprises</p>
+      
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+
+
+    <!-- script  -->
+
+    <script>
+      document.querySelectorAll(".course-list ul li").forEach((item) => {
+        item.addEventListener("click", function () {
+          const course = this.getAttribute("data-course");
+          showCourseDetails(course);
+        });
+      });
+
+      function showCourseDetails(course) {
+        const courseContent = document.getElementById("course-content");
+
+        const courses = {
+          course1: {
+            title: "UI/UX Designing",
+            description:
+              "Learn the principles of UI/UX design and how to create engaging user experiences.",
+          },
+          course2: {
+            title: "Full-Stack Web Development",
+            description:
+              "Master both front-end and back-end development to become a full-stack developer.",
+          },
+          course3: {
+            title: "Internet Of Things",
+            description:
+              "Explore IoT concepts and learn how to develop smart, connected devices.",
+          },
+          course4: {
+            title: "Digital Marketing",
+            description:
+              "Understand digital marketing strategies to effectively promote products and services online.",
+          },
+          course5: {
+            title: ".Net Development",
+            description:
+              "Learn .NET framework and how to develop scalable applications using C# and ASP.NET.",
+          },
+          course6: {
+            title: "Frontend/Backend Development",
+            description:
+              "Get skills in both front-end and back-end development to build complete web applications.",
+          },
+        };
+
+        const courseDetail = courses[course];
+
+        if (courseDetail) {
+          courseContent.innerHTML = `
+            <h2>${courseDetail.title}</h2>
+            <p>${courseDetail.description}</p>
+        `;
+        }
+      }
+     const testimonials = document.querySelectorAll(".testimonial-card");
+let index = 0;
+
+function showNextTestimonial() {
+  testimonials[index].classList.remove("active");
+  index = (index + 1) % testimonials.length;
+  testimonials[index].classList.add("active");
+}
+
+setInterval(showNextTestimonial, 3000); // Slide every 3 seconds
+
+      
+    </script>
+  </body>
+</html>
